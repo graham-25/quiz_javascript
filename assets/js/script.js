@@ -1,5 +1,5 @@
 const startButton = document.getElementById('btn-start')
-
+const questionElement = document.getElementById('displayQuestion')
 //startButton.addEventListener('click' this.startGame)
 
 function startGame() {
@@ -9,8 +9,9 @@ function startGame() {
 }
 
 function displayQuestion() {
-    
+        questionElement.innerText = questions.question
 }
+    
 
 function checkAnswer() {
 
