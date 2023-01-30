@@ -10,16 +10,19 @@
     <div class="container">
         <h1>Quiz</h1>
         <div class="questionBox">
-            <div id="displayQuestion">Question</div>
-            <div id="answerBTNs">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div id="displayQuestion"></div>
+            <div class="answerBTNs">
+                <button data-type="ans1" id="btn-1"></button>
+                <button data-type="ans2" id="btn-2"></button>
+                <button data-type="ans3" id="btn-3"></button>
+                <button data-type="ans4" id="btn-4"></button>
             </div>
         </div>
-        <div class="controls"></div>
+        <div class="controls">
+            <button data-type="start" id="btn-start">start</button>
+            <button data-type="result" id="btn-end">End</button>
+        </div>
     </div>
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

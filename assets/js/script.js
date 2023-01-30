@@ -1,19 +1,56 @@
-const startButton = document.getElementById('btn-start')
-const questionElement = document.getElementById('displayQuestion')
-//startButton.addEventListener('click' this.startGame)
+/*
+document.addEventListener("DOMContentLoaded", function() (
+   // let buttons = document.getElementsByTagName('button');
 
+    for(let i = 0; i < buttons.length; i++) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === 'start') {
+                alert("You clicked GOOD");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert('You clicked' ${gameType}); 
+            }
+        })
+    }
+)) 
+*/
+
+const startButton = document.getElementById('btn-start')
+const endButton = document.getElementById('btn-end')
+const questionElement = document.getElementById('displayQuestion')
+
+startButton.addEventListener('click', this.startGame)
+endButton.addEventListener('click', this.endGame)
+
+
+/*
+This is the first function that will be called, it initalises, clears the 
+game board and starts the game. 
+*/
 function startGame() {
+    console.log('Game started');
+    alert('Game Started');
     let gameCount = 0;
     displayQuestion()
+    console.log('gameCount');
 
 }
 
+/*
+This is the function that will display our question inthe HTML page,
+*/
 function displayQuestion() {
-        questionElement.innerText = questions.question
+    document.getElementById('displayQuestion').textContent = "Hello World"
+        //questionElement.innerText = questions.question
 }
     
 
 function checkAnswer() {
+
+}
+
+function endGame() {
+    alert('Game Over');
 
 }
 
