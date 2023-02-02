@@ -40,7 +40,8 @@ function displayQuestion() {
 
     
 /*
-
+This function waits for the user to select an answer, it then checks if the data set type
+is the same as the questions object correct and increments score if so.
 */
 function checkAnswer(e) {
     console.log(e.dataset.type);
@@ -52,9 +53,12 @@ function checkAnswer(e) {
     displayQuestion();
 }
 
+/*
+This function stops the game,
+*/
 function endGame() {
     alert('Game Over');
-
+    
 
 }
 
