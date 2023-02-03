@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <title>Quiz</title>
 </head>
 <body>
     <div class="container">
         <h1>Quiz</h1>
-        <div class="questionBox">
+        <div class="questionBox" class="hide">
             <h2 id="displayQuestion"></h2>
-            <div class="answerBTNs">
+            <div class="answerBTNs" class="hide">
                 <button data-type="ans" id="btn1" onclick="checkAnswer(this)"></button>
                 <button data-type="ans" id="btn2" onclick="checkAnswer(this)"></button>
                 <button data-type="ans" id="btn3" onclick="checkAnswer(this)"></button>

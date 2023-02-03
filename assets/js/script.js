@@ -16,6 +16,10 @@ This is the first function that will be called, it initalises score and current 
 calls the next function display question. 
 */
 function startGame() {
+    startButton.classList.add('hide');
+    answerButtons.classList.remove('hide');
+  
+    //endButton.classList,add('hide');
     score = 0;
     currentQuestion = 0;
     displayQuestion()
@@ -54,10 +58,16 @@ function checkAnswer(e) {
 }
 
 /*
-This function stops the game,
+This function stops the game, it shows the user how many correct answers they got.
 */
 function endGame() {
     alert('Game Over');
+    alert('You scored ' + score + ' correct answers' );
+    questionElement.classList.add('hide');
+    startButton.classList.remove('hide');
+    answerButtons.classList.add('hide');
+    endButton.classList.add('hide');
+
     
 
 }
