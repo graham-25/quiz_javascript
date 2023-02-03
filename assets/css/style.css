@@ -5,10 +5,18 @@ body {
     
 }
 
-.hide {
+#btn-end {
     display: none;
 }
 
-.answerBTNs {
-    display: none;
+.hide1 {
+    
+}
+
+.hide {
+    
+}
+
+#displayQuestion {
+    display: block;
 }

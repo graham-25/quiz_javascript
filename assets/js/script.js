@@ -9,17 +9,19 @@ let scores;
 
 startButton.addEventListener('click', this.startGame);
 endButton.addEventListener('click', this.endGame);
-
+startButton.style.display = 'block';
+endButton.style.display = 'none';
 
 /*
 This is the first function that will be called, it initalises score and current question to 0, 
 calls the next function display question. 
 */
 function startGame() {
-    startButton.classList.add('hide');
-    answerButtons.classList.remove('hide');
-  
-    //endButton.classList,add('hide');
+    startButton.style.display = 'none';
+    endButton.style.display = 'block';
+    questionElement.style.display = 'block';
+    
+    
     score = 0;
     currentQuestion = 0;
     displayQuestion()
@@ -61,15 +63,12 @@ function checkAnswer(e) {
 This function stops the game, it shows the user how many correct answers they got.
 */
 function endGame() {
+    startButton.style.display = 'block';
     alert('Game Over');
     alert('You scored ' + score + ' correct answers' );
-    questionElement.classList.add('hide');
-    startButton.classList.remove('hide');
-    answerButtons.classList.add('hide');
-    endButton.classList.add('hide');
-
-    
-
+    questionElement.style.display = 'none';
+    endButton.style.display = 'none';
+    answerButtons;
 }
 
 
