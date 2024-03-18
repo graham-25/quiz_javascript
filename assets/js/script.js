@@ -53,6 +53,9 @@ function checkAnswer(e) {
     console.log(e.dataset.type);
     if (e.dataset.type == questions[currentQuestion].correct) {
         score++;
+        alert("correct");
+    }else{
+        alert("Wrong");
     }
     console.log("Score is " + score);
     currentQuestion++;
