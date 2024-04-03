@@ -8,8 +8,8 @@
     <title>Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Quiz</h1>
+    <h1 class="heading">Quiz</h1>
+    <div class="container">    
         <div class="questionBox">
             <h2 id="displayQuestion" class="hide"></h2>
             <div class="answerBTNs">
@@ -18,6 +18,10 @@
                 <button data-type="ans" id="btn3" onclick="checkAnswer(this)" class="hide1"></button>
                 <button data-type="ans" id="btn4" onclick="checkAnswer(this)" class="hide1"></button>
             </div>
+        </div>
+        <div class="score-area">
+            <P class="score">Correct Answer <span id="score">0</span></P>
+            <p class="score">Incorrect Answer <span id="incorrect">0</span></p>
         </div>
         <div class="controls">
             <button data-type="start" id="btn-start">start</button>

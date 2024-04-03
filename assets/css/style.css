@@ -5,6 +5,48 @@ body {
     
 }
 
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* --- Design of Game Board for quiz ----- */
+
+.container {
+    background-color: #e6ecf0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.questionBox {
+    width: 70%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
 #btn-end {
     display: none;
 }

@@ -54,12 +54,28 @@ function checkAnswer(e) {
     if (e.dataset.type == questions[currentQuestion].correct) {
         score++;
         alert("correct");
+        correctAnswer();
     }else{
         alert("Wrong");
+        wrongAnswer();
     }
     console.log("Score is " + score);
     currentQuestion++;
     displayQuestion();
+}
+
+/**
+ * This code will execute when the user has selected a correct answer.
+ */
+function correctAnswer() {
+
+}
+
+/**
+ * This code will execute when the user has selected a wrong answer.
+ */
+function wrongAnswer() {
+
 }
 
 /*
